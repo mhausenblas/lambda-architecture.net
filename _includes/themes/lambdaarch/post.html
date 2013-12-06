@@ -2,8 +2,7 @@
   <h1>{{ page.title }} {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}</h1>
 </div>
 
-<div class="row-fluid post-full">
-  <div class="span12">
+<div class="post-full">
     <div class="date">
       <span>{{ page.date | date_to_long_string }}</span>
     </div>
@@ -45,5 +44,4 @@
     </div>
     <hr>
     {% include JB/comments %}
-  </div>
 </div>
