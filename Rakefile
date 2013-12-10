@@ -40,7 +40,7 @@ module JB
   end #Path
 end #JB
 
-# Usage: rake post title="A Title" [date="2012-02-09"] [tags=[tag1,tag2]] [category="category"]
+# Usage: rake post title="A Title" [date="2012-02-09"] [tags=[tag1,tag2]] [category="category"] [author="Author"] [author_twitter="@author"]
 desc "Begin a new post in #{CONFIG['posts']}"
 task :post do
   abort("rake aborted: '#{CONFIG['posts']}' directory not found.") unless FileTest.directory?(CONFIG['posts'])
@@ -48,6 +48,8 @@ task :post do
   tags = ENV["tags"] || "[]"
   category = ENV["category"] || ""
   slug = title.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
+  author = ENV["author"] || ""
+  author_twitter = ENV["author_twitter"] = ""
   begin
     date = (ENV['date'] ? Time.parse(ENV['date']) : Time.now).strftime('%Y-%m-%d')
   rescue => e
@@ -67,6 +69,8 @@ task :post do
     post.puts 'description: ""'
     post.puts "category: \"#{category.gsub(/-/,' ')}\""
     post.puts "tags: #{tags}"
+    post.puts "author: #{author}"
+    post.puts "author_twitter: #{author_twitter}"
     post.puts "---"
     post.puts "{% include JB/setup %}"
   end

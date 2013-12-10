@@ -15,7 +15,7 @@ author :
   name : Michael Hausenblas & Nathan Bijnens
   email : blah@email.test
   github : username
-  twitter : username
+  twitter : LambdaArch
   feedburner : feedname
 
 # The production_url is only used when full-domain names are needed
@@ -90,17 +90,8 @@ JB :
   comments :
     provider : disqus
     disqus :
-      short_name : jekyllbootstrap
-    livefyre :
-      site_id : 123
-    intensedebate :
-      account : 123abc
-    facebook :
-      appid : 123
-      num_posts: 5
-      width: 580
-      colorscheme: light
-   
+      short_name : lambdaarchitecture
+
   # Settings for analytics helper
   # Set 'provider' to the analytics provider you want to use.
   # Set 'provider' to false to turn analytics off globally.
@@ -123,7 +114,23 @@ JB :
   # Set 'provider' to false to turn sharing off globally.
   #
   sharing :
-    provider : false
+     provider : custom
+     twitter :
+         size :
+         via : LambdaArch
+         count :
+     facebook :
+         appid : 123
+         layout : button_count
+         font :
+         faces : false
+         width : 90
+     googleplus :
+         size : medium
+         width :
+         annotation : bubble
+     linkedin :
+         counter : right
     
   # Settings for all other include helpers can be defined by creating 
   # a hash with key named for the given helper. ex:

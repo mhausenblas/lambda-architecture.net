@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: home
 title: Welcome to Lambda Architecture.
 tagline: A repository of information, examples and good practices around the Lambda Architecture
 ---
