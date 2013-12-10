@@ -8,6 +8,18 @@ tagline: A repository of examples and good practices around the Lambda Architect
 ## Quickstart
 This site is dedicated to the Lambda Architecture (LA) and how it can be applied.
 
+### Sections
+
+* [Matching layers and components](pages/layer-component-matching/)
+
+### Entries
+
+<ul class="posts">
+  {% for post in site.posts %}
+    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
+
 ### What is the Lambda Architecture?
 
 Based on his experience working on distributed data processing systems at
@@ -21,7 +33,7 @@ rather than up.
 
 Here's how it looks like, from a high-level perspective:
 
-![LA overview](img/la-overview.png "LA overview")
+![LA overview](img/la-overview_small.png "LA overview")
 
 
 1. All **data** entering the system is dispatched to both the batch layer and the speed layer for processing.
@@ -29,14 +41,4 @@ Here's how it looks like, from a high-level perspective:
 1. The **serving layer** indexes the batch views so that they can be queried in ad hoc with low latency. 
 1. The **speed layer** compensates for the high latency of updates to the serving layer. This layer deals with recent data only.
 1. Any incoming **query** can be answered by merging results from batch views and real-time views.
-
-
-## Entries
-<ul class="posts">
-  {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
-
-
 
