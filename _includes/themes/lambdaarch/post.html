@@ -53,7 +53,7 @@
         <div class="col-md-4 pull-right">
             <div class="btn-group pull-right">
 
-                {% capture twitter_status %}{{page.title}} by @{{page.author_twitter}} #LambdaArch {{ site.production_url }}{{page.url }}{% endcapture %}
+                {% capture twitter_status %}{{page.title}} by @{{page.author_twitter}} %23LambdaArch {{ site.production_url }}{{page.url }}{% endcapture %}
                 {% capture full_url %}{{ site.production_url }}{{page.url }}{% endcapture %}
 
                 <a class="btn btn-twitter" href="http://twitter.com/home?status={{twitter_status | urlencode }}" target="_blank"><span class="fa fa-twitter"></span> Tweet</a>
