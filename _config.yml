@@ -29,11 +29,21 @@ author :
 production_url : http://lambda-architecture.net
 
 navigation:
-  - title: Blog
-    url: /blog
+  - title: Case Stories
+    url: /stories
+  - title: Components
+    url: /components
+  - title: Architecture
+    url: /architecture
+  - title: Contributing
+    url: /contribute
   - title: About us
     url: /aboutus
 
+mycategories:
+  organizational: Organizational
+  architecture: Architecture
+  stories: Case Stories
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #

@@ -1,0 +1,19 @@
+---
+layout: page
+title : Organizational
+header : Blog
+group: navigation
+permalink: organizational/index.html
+---
+{% include JB/setup %}
+
+{% assign posts_collate = site.categories.organizational %}
+{% include custom/posts_list %}
+
+### Entries
+
+<ul class="posts">
+    {% for post in site.categories.organizational %}
+    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a> by <a href="http://twitter.com/{{ post.author_twitter }}">{{ post.author }}</a></li>
+    {% endfor %}
+</ul>

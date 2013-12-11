@@ -1,9 +1,11 @@
 ---
 layout: post
 title: "The time has come"
-description: ""
-category: "FYI"
+description: ''
+category: organizational
 tags: []
+author: "Michael Hausenblas"
+author_twitter: mhausenblas
 ---
 {% include JB/setup %}
 

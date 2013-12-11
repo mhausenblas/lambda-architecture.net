@@ -10,13 +10,7 @@
       {{ content }}
     </div>
 
-  {% unless page.categories == empty %}
-    <ul class="tag_box inline">
-      <li><i class="icon-folder-open"></i></li>
-      {% assign categories_list = page.categories %}
-      {% include JB/categories_list %}
-    </ul>
-  {% endunless %}  
+
 
   {% unless page.tags == empty %}
     <ul class="tag_box inline">
@@ -26,25 +20,52 @@
     </ul>
   {% endunless %}  
     <hr>
-    <div class="post_sharing">
-        {% include custom/sharing %}
+    <div class="row">
+        <div class="col-md-4">
+            <div class="btn-group">
+
+                <a href="http://twitter.com/{{page.author_twitter}}" type="button" class="btn btn-default"><span class="fa fa-twitter"></span> {{page.author}}</a>
+                <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-calendar"></span> {{ page.date | date_to_long_string }}</button>
+
+            </div>
+        </div>
+        <div class="col-md-4" style="display: inline-flex">
+            <div class="btn-group center-block">
+
+                {% if page.previous %}
+                    <a class="btn btn-default" href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}"><span class="fa fa-backward"></span></a>
+                {% else %}
+                    <button class="btn btn-default" disabled="disabled"><span class="fa fa-backward"></span></button>
+                {% endif %}
+                {% for cat in site.mycategories %}
+                    {% if cat[0] == page.category %}
+                    <a href="/{{ cat[0] }}" type="button" class="btn btn-default"><span class="glyphicon glyphicon-list"></span> {{ cat[1] }}</a>
+                    {% endif %}
+                {% endfor %}
+                {% if page.next %}
+                    <a class="btn btn-default" href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}"><span class="fa fa-forward"></span></a>
+                {% else %}
+                    <button class="btn btn-default" disabled="disabled"><span class="fa fa-forward"></span></button>
+                {% endif %}
+
+            </div>
+        </div>
+        <div class="col-md-4 pull-right">
+            <div class="btn-group pull-right">
+
+                {% capture twitter_status %}{{page.title}} by @{{page.author_twitter}} #LambdaArch {{ site.production_url }}{{page.url }}{% endcapture %}
+                {% capture full_url %}{{ site.production_url }}{{page.url }}{% endcapture %}
+
+                <a class="btn btn-twitter" href="http://twitter.com/home?status={{twitter_status | urlencode }}" target="_blank"><span class="fa fa-twitter"></span> Tweet</a>
+                <a class="btn btn-facebook" href="http://www.facebook.com/share.php?u={{ full_url | urlencode }}&title={{page.title | urlencode}}" target="_blank"><span class="fa fa-facebook"></span> Share</a>
+                <a class="btn btn-google-plus" href="https://plus.google.com/share?url={{ full_url | urlencode }}" target="_blank"><span class="fa fa-google-plus"></span></a>
+                <a href="#comments" type="button" class="btn btn-default"><i class="fa fa-comment"></i> Comment</a>
+
+            </div>
+        </div>
     </div>
+
     <hr>
-    <div class="pagination">
-      <ul>
-      {% if page.previous %}
-        <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a></li>
-      {% else %}
-        <li class="prev disabled"><a>&larr; Previous</a></li>
-      {% endif %}
-        <li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a></li>
-      {% if page.next %}
-        <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next &rarr;</a></li>
-      {% else %}
-        <li class="next disabled"><a>Next &rarr;</a>
-      {% endif %}
-      </ul>
-    </div>
-    <hr>
+    <a name="comments"></a>
     {% include JB/comments %}
 </div>

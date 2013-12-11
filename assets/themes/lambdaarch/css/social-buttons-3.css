@@ -1,0 +1,869 @@
+/*!
+ * Social Buttons for Twitter Bootstrap v1.0.0
+ *
+ * Copyright 2013 Adam Neumann
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * Source: https://github.com/noizwaves/bootstrap-social-buttons
+ */
+
+.btn-facebook {
+  color: #ffffff;
+  background-color: #133783;
+  border-color: #133783;
+}
+
+.btn-facebook:hover,
+.btn-facebook:focus,
+.btn-facebook:active,
+.btn-facebook.active,
+.open .dropdown-toggle.btn-facebook {
+  color: #ffffff;
+  background-color: #0e285f;
+  border-color: #0b214e;
+}
+
+.btn-facebook:active,
+.btn-facebook.active,
+.open .dropdown-toggle.btn-facebook {
+  background-image: none;
+}
+
+.btn-facebook.disabled,
+.btn-facebook[disabled],
+fieldset[disabled] .btn-facebook,
+.btn-facebook.disabled:hover,
+.btn-facebook[disabled]:hover,
+fieldset[disabled] .btn-facebook:hover,
+.btn-facebook.disabled:focus,
+.btn-facebook[disabled]:focus,
+fieldset[disabled] .btn-facebook:focus,
+.btn-facebook.disabled:active,
+.btn-facebook[disabled]:active,
+fieldset[disabled] .btn-facebook:active,
+.btn-facebook.disabled.active,
+.btn-facebook[disabled].active,
+fieldset[disabled] .btn-facebook.active {
+  background-color: #133783;
+  border-color: #133783;
+}
+
+.btn-twitter {
+  color: #ffffff;
+  background-color: #2daddc;
+  border-color: #0271bf;
+}
+
+.btn-twitter:hover,
+.btn-twitter:focus,
+.btn-twitter:active,
+.btn-twitter.active,
+.open .dropdown-toggle.btn-twitter {
+  color: #ffffff;
+  background-color: #2095c0;
+  border-color: #014d82;
+}
+
+.btn-twitter:active,
+.btn-twitter.active,
+.open .dropdown-toggle.btn-twitter {
+  background-image: none;
+}
+
+.btn-twitter.disabled,
+.btn-twitter[disabled],
+fieldset[disabled] .btn-twitter,
+.btn-twitter.disabled:hover,
+.btn-twitter[disabled]:hover,
+fieldset[disabled] .btn-twitter:hover,
+.btn-twitter.disabled:focus,
+.btn-twitter[disabled]:focus,
+fieldset[disabled] .btn-twitter:focus,
+.btn-twitter.disabled:active,
+.btn-twitter[disabled]:active,
+fieldset[disabled] .btn-twitter:active,
+.btn-twitter.disabled.active,
+.btn-twitter[disabled].active,
+fieldset[disabled] .btn-twitter.active {
+  background-color: #2daddc;
+  border-color: #0271bf;
+}
+
+.btn-github {
+  color: #000000;
+  background-color: #fafafa;
+  border-color: #cccccc;
+}
+
+.btn-github:hover,
+.btn-github:focus,
+.btn-github:active,
+.btn-github.active,
+.open .dropdown-toggle.btn-github {
+  color: #000000;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+
+.btn-github:active,
+.btn-github.active,
+.open .dropdown-toggle.btn-github {
+  background-image: none;
+}
+
+.btn-github.disabled,
+.btn-github[disabled],
+fieldset[disabled] .btn-github,
+.btn-github.disabled:hover,
+.btn-github[disabled]:hover,
+fieldset[disabled] .btn-github:hover,
+.btn-github.disabled:focus,
+.btn-github[disabled]:focus,
+fieldset[disabled] .btn-github:focus,
+.btn-github.disabled:active,
+.btn-github[disabled]:active,
+fieldset[disabled] .btn-github:active,
+.btn-github.disabled.active,
+.btn-github[disabled].active,
+fieldset[disabled] .btn-github.active {
+  background-color: #fafafa;
+  border-color: #cccccc;
+}
+
+.btn-pinterest {
+  color: #ffffff;
+  background-color: #d62229;
+  border-color: #ab171e;
+}
+
+.btn-pinterest:hover,
+.btn-pinterest:focus,
+.btn-pinterest:active,
+.btn-pinterest.active,
+.open .dropdown-toggle.btn-pinterest {
+  color: #ffffff;
+  background-color: #b31c22;
+  border-color: #751015;
+}
+
+.btn-pinterest:active,
+.btn-pinterest.active,
+.open .dropdown-toggle.btn-pinterest {
+  background-image: none;
+}
+
+.btn-pinterest.disabled,
+.btn-pinterest[disabled],
+fieldset[disabled] .btn-pinterest,
+.btn-pinterest.disabled:hover,
+.btn-pinterest[disabled]:hover,
+fieldset[disabled] .btn-pinterest:hover,
+.btn-pinterest.disabled:focus,
+.btn-pinterest[disabled]:focus,
+fieldset[disabled] .btn-pinterest:focus,
+.btn-pinterest.disabled:active,
+.btn-pinterest[disabled]:active,
+fieldset[disabled] .btn-pinterest:active,
+.btn-pinterest.disabled.active,
+.btn-pinterest[disabled].active,
+fieldset[disabled] .btn-pinterest.active {
+  background-color: #d62229;
+  border-color: #ab171e;
+}
+
+.btn-linkedin {
+  color: #ffffff;
+  background-color: #73b8db;
+  border-color: #4393bb;
+}
+
+.btn-linkedin:hover,
+.btn-linkedin:focus,
+.btn-linkedin:active,
+.btn-linkedin.active,
+.open .dropdown-toggle.btn-linkedin {
+  color: #ffffff;
+  background-color: #53a8d3;
+  border-color: #33708e;
+}
+
+.btn-linkedin:active,
+.btn-linkedin.active,
+.open .dropdown-toggle.btn-linkedin {
+  background-image: none;
+}
+
+.btn-linkedin.disabled,
+.btn-linkedin[disabled],
+fieldset[disabled] .btn-linkedin,
+.btn-linkedin.disabled:hover,
+.btn-linkedin[disabled]:hover,
+fieldset[disabled] .btn-linkedin:hover,
+.btn-linkedin.disabled:focus,
+.btn-linkedin[disabled]:focus,
+fieldset[disabled] .btn-linkedin:focus,
+.btn-linkedin.disabled:active,
+.btn-linkedin[disabled]:active,
+fieldset[disabled] .btn-linkedin:active,
+.btn-linkedin.disabled.active,
+.btn-linkedin[disabled].active,
+fieldset[disabled] .btn-linkedin.active {
+  background-color: #73b8db;
+  border-color: #4393bb;
+}
+
+.btn-google-plus {
+  color: #ffffff;
+  background-color: #dd4b39;
+  border-color: #c53727;
+}
+
+.btn-google-plus:hover,
+.btn-google-plus:focus,
+.btn-google-plus:active,
+.btn-google-plus.active,
+.open .dropdown-toggle.btn-google-plus {
+  color: #ffffff;
+  background-color: #ca3523;
+  border-color: #92291d;
+}
+
+.btn-google-plus:active,
+.btn-google-plus.active,
+.open .dropdown-toggle.btn-google-plus {
+  background-image: none;
+}
+
+.btn-google-plus.disabled,
+.btn-google-plus[disabled],
+fieldset[disabled] .btn-google-plus,
+.btn-google-plus.disabled:hover,
+.btn-google-plus[disabled]:hover,
+fieldset[disabled] .btn-google-plus:hover,
+.btn-google-plus.disabled:focus,
+.btn-google-plus[disabled]:focus,
+fieldset[disabled] .btn-google-plus:focus,
+.btn-google-plus.disabled:active,
+.btn-google-plus[disabled]:active,
+fieldset[disabled] .btn-google-plus:active,
+.btn-google-plus.disabled.active,
+.btn-google-plus[disabled].active,
+fieldset[disabled] .btn-google-plus.active {
+  background-color: #dd4b39;
+  border-color: #c53727;
+}
+
+.btn-instagram {
+  color: #ffffff;
+  background-color: #6f97b6;
+  border-color: #3f729b;
+}
+
+.btn-instagram:hover,
+.btn-instagram:focus,
+.btn-instagram:active,
+.btn-instagram.active,
+.open .dropdown-toggle.btn-instagram {
+  color: #ffffff;
+  background-color: #5583a7;
+  border-color: #2d526f;
+}
+
+.btn-instagram:active,
+.btn-instagram.active,
+.open .dropdown-toggle.btn-instagram {
+  background-image: none;
+}
+
+.btn-instagram.disabled,
+.btn-instagram[disabled],
+fieldset[disabled] .btn-instagram,
+.btn-instagram.disabled:hover,
+.btn-instagram[disabled]:hover,
+fieldset[disabled] .btn-instagram:hover,
+.btn-instagram.disabled:focus,
+.btn-instagram[disabled]:focus,
+fieldset[disabled] .btn-instagram:focus,
+.btn-instagram.disabled:active,
+.btn-instagram[disabled]:active,
+fieldset[disabled] .btn-instagram:active,
+.btn-instagram.disabled.active,
+.btn-instagram[disabled].active,
+fieldset[disabled] .btn-instagram.active {
+  background-color: #6f97b6;
+  border-color: #3f729b;
+}
+
+.btn-dropbox {
+  color: #ffffff;
+  background-color: #37a3eb;
+  border-color: #2181cf;
+}
+
+.btn-dropbox:hover,
+.btn-dropbox:focus,
+.btn-dropbox:active,
+.btn-dropbox.active,
+.open .dropdown-toggle.btn-dropbox {
+  color: #ffffff;
+  background-color: #1791e3;
+  border-color: #19609a;
+}
+
+.btn-dropbox:active,
+.btn-dropbox.active,
+.open .dropdown-toggle.btn-dropbox {
+  background-image: none;
+}
+
+.btn-dropbox.disabled,
+.btn-dropbox[disabled],
+fieldset[disabled] .btn-dropbox,
+.btn-dropbox.disabled:hover,
+.btn-dropbox[disabled]:hover,
+fieldset[disabled] .btn-dropbox:hover,
+.btn-dropbox.disabled:focus,
+.btn-dropbox[disabled]:focus,
+fieldset[disabled] .btn-dropbox:focus,
+.btn-dropbox.disabled:active,
+.btn-dropbox[disabled]:active,
+fieldset[disabled] .btn-dropbox:active,
+.btn-dropbox.disabled.active,
+.btn-dropbox[disabled].active,
+fieldset[disabled] .btn-dropbox.active {
+  background-color: #37a3eb;
+  border-color: #2181cf;
+}
+
+.btn-bitbucket {
+  color: #ffffff;
+  background-color: #2d5f9c;
+  border-color: #205081;
+}
+
+.btn-bitbucket:hover,
+.btn-bitbucket:focus,
+.btn-bitbucket:active,
+.btn-bitbucket.active,
+.open .dropdown-toggle.btn-bitbucket {
+  color: #ffffff;
+  background-color: #244c7c;
+  border-color: #143250;
+}
+
+.btn-bitbucket:active,
+.btn-bitbucket.active,
+.open .dropdown-toggle.btn-bitbucket {
+  background-image: none;
+}
+
+.btn-bitbucket.disabled,
+.btn-bitbucket[disabled],
+fieldset[disabled] .btn-bitbucket,
+.btn-bitbucket.disabled:hover,
+.btn-bitbucket[disabled]:hover,
+fieldset[disabled] .btn-bitbucket:hover,
+.btn-bitbucket.disabled:focus,
+.btn-bitbucket[disabled]:focus,
+fieldset[disabled] .btn-bitbucket:focus,
+.btn-bitbucket.disabled:active,
+.btn-bitbucket[disabled]:active,
+fieldset[disabled] .btn-bitbucket:active,
+.btn-bitbucket.disabled.active,
+.btn-bitbucket[disabled].active,
+fieldset[disabled] .btn-bitbucket.active {
+  background-color: #2d5f9c;
+  border-color: #205081;
+}
+
+.btn-dribbble {
+  color: #ffffff;
+  background-color: #ea4c89;
+  border-color: #cb396f;
+}
+
+.btn-dribbble:hover,
+.btn-dribbble:focus,
+.btn-dribbble:active,
+.btn-dribbble.active,
+.open .dropdown-toggle.btn-dribbble {
+  color: #ffffff;
+  background-color: #e62771;
+  border-color: #9d2954;
+}
+
+.btn-dribbble:active,
+.btn-dribbble.active,
+.open .dropdown-toggle.btn-dribbble {
+  background-image: none;
+}
+
+.btn-dribbble.disabled,
+.btn-dribbble[disabled],
+fieldset[disabled] .btn-dribbble,
+.btn-dribbble.disabled:hover,
+.btn-dribbble[disabled]:hover,
+fieldset[disabled] .btn-dribbble:hover,
+.btn-dribbble.disabled:focus,
+.btn-dribbble[disabled]:focus,
+fieldset[disabled] .btn-dribbble:focus,
+.btn-dribbble.disabled:active,
+.btn-dribbble[disabled]:active,
+fieldset[disabled] .btn-dribbble:active,
+.btn-dribbble.disabled.active,
+.btn-dribbble[disabled].active,
+fieldset[disabled] .btn-dribbble.active {
+  background-color: #ea4c89;
+  border-color: #cb396f;
+}
+
+.btn-flickr {
+  color: #ffffff;
+  background-color: #f051a5;
+  border-color: #ff0084;
+}
+
+.btn-flickr:hover,
+.btn-flickr:focus,
+.btn-flickr:active,
+.btn-flickr.active,
+.open .dropdown-toggle.btn-flickr {
+  color: #ffffff;
+  background-color: #ed2b92;
+  border-color: #c20064;
+}
+
+.btn-flickr:active,
+.btn-flickr.active,
+.open .dropdown-toggle.btn-flickr {
+  background-image: none;
+}
+
+.btn-flickr.disabled,
+.btn-flickr[disabled],
+fieldset[disabled] .btn-flickr,
+.btn-flickr.disabled:hover,
+.btn-flickr[disabled]:hover,
+fieldset[disabled] .btn-flickr:hover,
+.btn-flickr.disabled:focus,
+.btn-flickr[disabled]:focus,
+fieldset[disabled] .btn-flickr:focus,
+.btn-flickr.disabled:active,
+.btn-flickr[disabled]:active,
+fieldset[disabled] .btn-flickr:active,
+.btn-flickr.disabled.active,
+.btn-flickr[disabled].active,
+fieldset[disabled] .btn-flickr.active {
+  background-color: #f051a5;
+  border-color: #ff0084;
+}
+
+.btn-foursquare {
+  color: #ffffff;
+  background-color: #0cbadf;
+  border-color: #0072b1;
+}
+
+.btn-foursquare:hover,
+.btn-foursquare:focus,
+.btn-foursquare:active,
+.btn-foursquare.active,
+.open .dropdown-toggle.btn-foursquare {
+  color: #ffffff;
+  background-color: #0a9ab8;
+  border-color: #004b74;
+}
+
+.btn-foursquare:active,
+.btn-foursquare.active,
+.open .dropdown-toggle.btn-foursquare {
+  background-image: none;
+}
+
+.btn-foursquare.disabled,
+.btn-foursquare[disabled],
+fieldset[disabled] .btn-foursquare,
+.btn-foursquare.disabled:hover,
+.btn-foursquare[disabled]:hover,
+fieldset[disabled] .btn-foursquare:hover,
+.btn-foursquare.disabled:focus,
+.btn-foursquare[disabled]:focus,
+fieldset[disabled] .btn-foursquare:focus,
+.btn-foursquare.disabled:active,
+.btn-foursquare[disabled]:active,
+fieldset[disabled] .btn-foursquare:active,
+.btn-foursquare.disabled.active,
+.btn-foursquare[disabled].active,
+fieldset[disabled] .btn-foursquare.active {
+  background-color: #0cbadf;
+  border-color: #0072b1;
+}
+
+.btn-renren {
+  color: #ffffff;
+  background-color: #397cb6;
+  border-color: #33669a;
+}
+
+.btn-renren:hover,
+.btn-renren:focus,
+.btn-renren:active,
+.btn-renren.active,
+.open .dropdown-toggle.btn-renren {
+  color: #ffffff;
+  background-color: #2f6797;
+  border-color: #24486c;
+}
+
+.btn-renren:active,
+.btn-renren.active,
+.open .dropdown-toggle.btn-renren {
+  background-image: none;
+}
+
+.btn-renren.disabled,
+.btn-renren[disabled],
+fieldset[disabled] .btn-renren,
+.btn-renren.disabled:hover,
+.btn-renren[disabled]:hover,
+fieldset[disabled] .btn-renren:hover,
+.btn-renren.disabled:focus,
+.btn-renren[disabled]:focus,
+fieldset[disabled] .btn-renren:focus,
+.btn-renren.disabled:active,
+.btn-renren[disabled]:active,
+fieldset[disabled] .btn-renren:active,
+.btn-renren.disabled.active,
+.btn-renren[disabled].active,
+fieldset[disabled] .btn-renren.active {
+  background-color: #397cb6;
+  border-color: #33669a;
+}
+
+.btn-skype {
+  color: #ffffff;
+  background-color: #70c3e2;
+  border-color: #00aff0;
+}
+
+.btn-skype:hover,
+.btn-skype:focus,
+.btn-skype:active,
+.btn-skype.active,
+.open .dropdown-toggle.btn-skype {
+  color: #ffffff;
+  background-color: #4eb5db;
+  border-color: #0082b3;
+}
+
+.btn-skype:active,
+.btn-skype.active,
+.open .dropdown-toggle.btn-skype {
+  background-image: none;
+}
+
+.btn-skype.disabled,
+.btn-skype[disabled],
+fieldset[disabled] .btn-skype,
+.btn-skype.disabled:hover,
+.btn-skype[disabled]:hover,
+fieldset[disabled] .btn-skype:hover,
+.btn-skype.disabled:focus,
+.btn-skype[disabled]:focus,
+fieldset[disabled] .btn-skype:focus,
+.btn-skype.disabled:active,
+.btn-skype[disabled]:active,
+fieldset[disabled] .btn-skype:active,
+.btn-skype.disabled.active,
+.btn-skype[disabled].active,
+fieldset[disabled] .btn-skype.active {
+  background-color: #70c3e2;
+  border-color: #00aff0;
+}
+
+.btn-stackexchange {
+  color: #ffffff;
+  background-color: #5184c1;
+  border-color: #185397;
+}
+
+.btn-stackexchange:hover,
+.btn-stackexchange:focus,
+.btn-stackexchange:active,
+.btn-stackexchange.active,
+.open .dropdown-toggle.btn-stackexchange {
+  color: #ffffff;
+  background-color: #3d70ac;
+  border-color: #103662;
+}
+
+.btn-stackexchange:active,
+.btn-stackexchange.active,
+.open .dropdown-toggle.btn-stackexchange {
+  background-image: none;
+}
+
+.btn-stackexchange.disabled,
+.btn-stackexchange[disabled],
+fieldset[disabled] .btn-stackexchange,
+.btn-stackexchange.disabled:hover,
+.btn-stackexchange[disabled]:hover,
+fieldset[disabled] .btn-stackexchange:hover,
+.btn-stackexchange.disabled:focus,
+.btn-stackexchange[disabled]:focus,
+fieldset[disabled] .btn-stackexchange:focus,
+.btn-stackexchange.disabled:active,
+.btn-stackexchange[disabled]:active,
+fieldset[disabled] .btn-stackexchange:active,
+.btn-stackexchange.disabled.active,
+.btn-stackexchange[disabled].active,
+fieldset[disabled] .btn-stackexchange.active {
+  background-color: #5184c1;
+  border-color: #185397;
+}
+
+.btn-trello {
+  color: #ffffff;
+  background-color: #569cc4;
+  border-color: #27709b;
+}
+
+.btn-trello:hover,
+.btn-trello:focus,
+.btn-trello:active,
+.btn-trello.active,
+.open .dropdown-toggle.btn-trello {
+  color: #ffffff;
+  background-color: #3e88b3;
+  border-color: #1b4d6a;
+}
+
+.btn-trello:active,
+.btn-trello.active,
+.open .dropdown-toggle.btn-trello {
+  background-image: none;
+}
+
+.btn-trello.disabled,
+.btn-trello[disabled],
+fieldset[disabled] .btn-trello,
+.btn-trello.disabled:hover,
+.btn-trello[disabled]:hover,
+fieldset[disabled] .btn-trello:hover,
+.btn-trello.disabled:focus,
+.btn-trello[disabled]:focus,
+fieldset[disabled] .btn-trello:focus,
+.btn-trello.disabled:active,
+.btn-trello[disabled]:active,
+fieldset[disabled] .btn-trello:active,
+.btn-trello.disabled.active,
+.btn-trello[disabled].active,
+fieldset[disabled] .btn-trello.active {
+  background-color: #569cc4;
+  border-color: #27709b;
+}
+
+.btn-tumblr {
+  color: #ffffff;
+  background-color: #3a5976;
+  border-color: #2a4763;
+}
+
+.btn-tumblr:hover,
+.btn-tumblr:focus,
+.btn-tumblr:active,
+.btn-tumblr.active,
+.open .dropdown-toggle.btn-tumblr {
+  color: #ffffff;
+  background-color: #2d445b;
+  border-color: #182838;
+}
+
+.btn-tumblr:active,
+.btn-tumblr.active,
+.open .dropdown-toggle.btn-tumblr {
+  background-image: none;
+}
+
+.btn-tumblr.disabled,
+.btn-tumblr[disabled],
+fieldset[disabled] .btn-tumblr,
+.btn-tumblr.disabled:hover,
+.btn-tumblr[disabled]:hover,
+fieldset[disabled] .btn-tumblr:hover,
+.btn-tumblr.disabled:focus,
+.btn-tumblr[disabled]:focus,
+fieldset[disabled] .btn-tumblr:focus,
+.btn-tumblr.disabled:active,
+.btn-tumblr[disabled]:active,
+fieldset[disabled] .btn-tumblr:active,
+.btn-tumblr.disabled.active,
+.btn-tumblr[disabled].active,
+fieldset[disabled] .btn-tumblr.active {
+  background-color: #3a5976;
+  border-color: #2a4763;
+}
+
+.btn-vk {
+  color: #ffffff;
+  background-color: #5a7fa6;
+  border-color: #426187;
+}
+
+.btn-vk:hover,
+.btn-vk:focus,
+.btn-vk:active,
+.btn-vk.active,
+.open .dropdown-toggle.btn-vk {
+  color: #ffffff;
+  background-color: #4b6b8c;
+  border-color: #2e435e;
+}
+
+.btn-vk:active,
+.btn-vk.active,
+.open .dropdown-toggle.btn-vk {
+  background-image: none;
+}
+
+.btn-vk.disabled,
+.btn-vk[disabled],
+fieldset[disabled] .btn-vk,
+.btn-vk.disabled:hover,
+.btn-vk[disabled]:hover,
+fieldset[disabled] .btn-vk:hover,
+.btn-vk.disabled:focus,
+.btn-vk[disabled]:focus,
+fieldset[disabled] .btn-vk:focus,
+.btn-vk.disabled:active,
+.btn-vk[disabled]:active,
+fieldset[disabled] .btn-vk:active,
+.btn-vk.disabled.active,
+.btn-vk[disabled].active,
+fieldset[disabled] .btn-vk.active {
+  background-color: #5a7fa6;
+  border-color: #426187;
+}
+
+.btn-weibo {
+  color: #ffffff;
+  background-color: #f85959;
+  border-color: #e64141;
+}
+
+.btn-weibo:hover,
+.btn-weibo:focus,
+.btn-weibo:active,
+.btn-weibo.active,
+.open .dropdown-toggle.btn-weibo {
+  color: #ffffff;
+  background-color: #f63232;
+  border-color: #cf1b1b;
+}
+
+.btn-weibo:active,
+.btn-weibo.active,
+.open .dropdown-toggle.btn-weibo {
+  background-image: none;
+}
+
+.btn-weibo.disabled,
+.btn-weibo[disabled],
+fieldset[disabled] .btn-weibo,
+.btn-weibo.disabled:hover,
+.btn-weibo[disabled]:hover,
+fieldset[disabled] .btn-weibo:hover,
+.btn-weibo.disabled:focus,
+.btn-weibo[disabled]:focus,
+fieldset[disabled] .btn-weibo:focus,
+.btn-weibo.disabled:active,
+.btn-weibo[disabled]:active,
+fieldset[disabled] .btn-weibo:active,
+.btn-weibo.disabled.active,
+.btn-weibo[disabled].active,
+fieldset[disabled] .btn-weibo.active {
+  background-color: #f85959;
+  border-color: #e64141;
+}
+
+.btn-xing {
+  color: #ffffff;
+  background-color: #1f6768;
+  border-color: #074c4d;
+}
+
+.btn-xing:hover,
+.btn-xing:focus,
+.btn-xing:active,
+.btn-xing.active,
+.open .dropdown-toggle.btn-xing {
+  color: #ffffff;
+  background-color: #164849;
+  border-color: #021515;
+}
+
+.btn-xing:active,
+.btn-xing.active,
+.open .dropdown-toggle.btn-xing {
+  background-image: none;
+}
+
+.btn-xing.disabled,
+.btn-xing[disabled],
+fieldset[disabled] .btn-xing,
+.btn-xing.disabled:hover,
+.btn-xing[disabled]:hover,
+fieldset[disabled] .btn-xing:hover,
+.btn-xing.disabled:focus,
+.btn-xing[disabled]:focus,
+fieldset[disabled] .btn-xing:focus,
+.btn-xing.disabled:active,
+.btn-xing[disabled]:active,
+fieldset[disabled] .btn-xing:active,
+.btn-xing.disabled.active,
+.btn-xing[disabled].active,
+fieldset[disabled] .btn-xing.active {
+  background-color: #1f6768;
+  border-color: #074c4d;
+}
+
+.btn-youtube {
+  color: #ffffff;
+  background-color: #cd332d;
+  border-color: #6e0610;
+}
+
+.btn-youtube:hover,
+.btn-youtube:focus,
+.btn-youtube:active,
+.btn-youtube.active,
+.open .dropdown-toggle.btn-youtube {
+  color: #ffffff;
+  background-color: #ac2b26;
+  border-color: #340308;
+}
+
+.btn-youtube:active,
+.btn-youtube.active,
+.open .dropdown-toggle.btn-youtube {
+  background-image: none;
+}
+
+.btn-youtube.disabled,
+.btn-youtube[disabled],
+fieldset[disabled] .btn-youtube,
+.btn-youtube.disabled:hover,
+.btn-youtube[disabled]:hover,
+fieldset[disabled] .btn-youtube:hover,
+.btn-youtube.disabled:focus,
+.btn-youtube[disabled]:focus,
+fieldset[disabled] .btn-youtube:focus,
+.btn-youtube.disabled:active,
+.btn-youtube[disabled]:active,
+fieldset[disabled] .btn-youtube:active,
+.btn-youtube.disabled.active,
+.btn-youtube[disabled].active,
+fieldset[disabled] .btn-youtube.active {
+  background-color: #cd332d;
+  border-color: #6e0610;
+}

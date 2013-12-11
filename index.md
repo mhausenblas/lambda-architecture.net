@@ -5,20 +5,9 @@ tagline: A repository of examples and good practices around the Lambda Architect
 ---
 {% include JB/setup %}
 
-## Quickstart
-This site is dedicated to the Lambda Architecture (LA) and how it can be applied.
-
 ### Sections
 
 * [Matching layers and components](pages/layer-component-matching/)
-
-### Entries
-
-<ul class="posts">
-  {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
 
 ### What is the Lambda Architecture?
 
@@ -42,3 +31,10 @@ Here's how it looks like, from a high-level perspective:
 1. The **speed layer** compensates for the high latency of updates to the serving layer. This layer deals with recent data only.
 1. Any incoming **query** can be answered by merging results from batch views and real-time views.
 
+### Entries
+
+<ul class="posts">
+  {% for post in site.posts %}
+    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a> by <a href="http://twitter.com/{{ post.author_twitter }}">{{ post.author }}</a></li>
+  {% endfor %}
+</ul>

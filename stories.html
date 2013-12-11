@@ -1,0 +1,11 @@
+---
+layout: page
+title : Case Stories
+header : Blog
+group: navigation
+permalink: stories/index.html
+---
+{% include JB/setup %}
+
+{% assign posts_collate = site.categories.stories %}
+{% include custom/posts_list %}
