@@ -22,10 +22,10 @@
     <hr>
     <div class="row">
         <div class="col-md-4">
-            <div class="btn-group">
+            <div class="btn-group btn-group-justified">
 
                 <a href="http://twitter.com/{{page.author_twitter}}" type="button" class="btn btn-default" target="_blank"><span class="fa fa-twitter"></span> {{page.author}}</a>
-                <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-calendar"></span> {{ page.date | date_to_long_string }}</button>
+                <a href="#" class="btn btn-default"><span class="glyphicon glyphicon-calendar"></span> {{ page.date | date_to_long_string }}</a>
 
             </div>
         </div>
@@ -51,15 +51,16 @@
             </div>
         </div>
         <div class="col-md-4 pull-right">
-            <div class="btn-group pull-right">
+            <div class="btn-group pull-right btn-group-justified">
 
                 {% capture twitter_status %}{{page.title}} by @{{page.author_twitter}} %23LambdaArch {{ site.production_url }}{{page.url }}{% endcapture %}
                 {% capture full_url %}{{ site.production_url }}{{page.url }}{% endcapture %}
 
-                <a class="btn btn-twitter" href="http://twitter.com/home?status={{twitter_status | urlencode }}" target="_blank"><span class="fa fa-twitter"></span> Tweet</a>
-                <a class="btn btn-facebook" href="http://www.facebook.com/share.php?u={{ full_url | urlencode }}&title={{page.title | urlencode}}" target="_blank"><span class="fa fa-facebook"></span> Share</a>
+                <a class="btn btn-twitter" href="http://twitter.com/home?status={{twitter_status | urlencode }}" target="_blank"><span class="fa fa-twitter"></span></a>
+                <a class="btn btn-facebook" href="http://www.facebook.com/share.php?u={{ full_url | urlencode }}&title={{page.title | urlencode}}" target="_blank"><span class="fa fa-facebook"></span></a>
                 <a class="btn btn-google-plus" href="https://plus.google.com/share?url={{ full_url | urlencode }}" target="_blank"><span class="fa fa-google-plus"></span></a>
-                <a href="#comments" type="button" class="btn btn-default"><i class="fa fa-comment"></i> Comment</a>
+                <a class="btn btn-linkedin" href="http://www.linkedin.com/shareArticle?mini=true&url={{ full_url | urlencode }}&title={{page.title | urlencode}}&source=lambda-architecture.net" target="_blank"><span class="fa fa-linkedin"> </span></a>
+                <a href="#comments" type="button" class="btn btn-default"><i class="fa fa-comment"></i> </a>
 
             </div>
         </div>
