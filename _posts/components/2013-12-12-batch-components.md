@@ -9,6 +9,8 @@ author_twitter: nathan_gs
 ---
 {% include JB/setup %}
 
+
+
 |Technology         |Does it fit            |Maturity               |Complexity             |Language       |Comments       |
 |-------------------|-----------------------|-----------------------|-----------------------|---------------|---------------|
 |Hadoop MapReduce   |&#9733;&#9733;&#9733;  |&#9733;&#9733;&#9733;  |&#9733;                |Java           |               |
@@ -16,4 +18,5 @@ author_twitter: nathan_gs
 |Hadoop Hive        |&#9733;&#9733;         |&#9733;&#9733;&#9733;  |&#9733;&#9733;&#9733;  |SQL, Java      |               |
 |Cascading          |&#9733;&#9733;&#9733;  |&#9733;&#9733;         |&#9733;&#9733;         |Java           |               |
 |Cascalog           |&#9733;&#9733;&#9733;  |&#9733;                |&#9733;                |Clojure        |               |
+
 

@@ -1,0 +1,49 @@
+.content table {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.content table > thead > tr > th,
+.content table > tbody > tr > th,
+.content table > tfoot > tr > th,
+.content table > thead > tr > td,
+.content table > tbody > tr > td,
+.content table > tfoot > tr > td {
+    padding: 8px;
+    line-height: 1.428571429;
+    vertical-align: top;
+    border-top: 1px solid #dddddd;
+}
+
+.content table > thead > tr > th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dddddd;
+}
+
+.content table > caption + thead > tr:first-child > th,
+.content table > colgroup + thead > tr:first-child > th,
+.content table > thead:first-child > tr:first-child > th,
+.content table > caption + thead > tr:first-child > td,
+.content table > colgroup + thead > tr:first-child > td,
+.content table > thead:first-child > tr:first-child > td {
+    border-top: 0;
+}
+
+.content table > tbody + tbody {
+    border-top: 2px solid #dddddd;
+}
+
+.content table table {
+    background-color: #ffffff;
+}
+
+
+.content table > tbody > tr:nth-child(odd) > td,
+.content table > tbody > tr:nth-child(odd) > th {
+    background-color: #f9f9f9;
+}
+
+.content table > tbody > tr:hover > td,
+.content table > tbody > tr:hover > th {
+    background-color: #eeeeee;
+}
