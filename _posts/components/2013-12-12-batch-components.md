@@ -24,8 +24,8 @@ author_twitter: nathan_gs
 
 |Technology                                                |Does it fit            |Maturity               |Complexity             |Language       |Comments       |
 |----------------------------------------------------------|-----------------------|-----------------------|-----------------------|---------------|---------------|
-|ElephantDB                                                |&#9733;&#9733;&#9733;  |&#9733;                |&#9733;                |Java           |               |
-|SploutSQL                                                 |&#9733;&#9733;&#9733;  |&#9733;                |&#9733;&#9733;         |Pig Latin, Java|               |
-|Voldemort (with a ReadOnly backend)                       |&#9733;&#9733;         |&#9733;&#9733;         |&#9733;&#9733;         |SQL, Java      |               |
+|ElephantDB                                                |&#9733;&#9733;&#9733;  |&#9733;                |&#9733;                |Clojure        |               |
+|SploutSQL                                                 |&#9733;&#9733;&#9733;  |&#9733;                |&#9733;&#9733;         |Java|          |
+|Voldemort (with a ReadOnly backend)                       |&#9733;&#9733;         |&#9733;&#9733;         |&#9733;&#9733;         |Scala          |               |
 
 
