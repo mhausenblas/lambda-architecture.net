@@ -1,13 +1,9 @@
 ---
 layout: home
-title: Welcome to Lambda Architecture!
-tagline: A repository of examples and good practices around the Lambda Architecture
+title: Lambda Architecture
+tagline: A repository dedicated to the Lambda Architecture (LA). We collect and publish examples and good practices around the LA.
 ---
 {% include JB/setup %}
-
-### Sections
-
-* [Matching layers and components](pages/layer-component-matching/)
 
 ### What is the Lambda Architecture?
 
