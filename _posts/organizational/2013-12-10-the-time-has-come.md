@@ -28,7 +28,7 @@ Last but not least, this site depends on **you**. Yes, you. Because unlike the
 LA, neither Nathan nor I scale well, so we depend on [community contributions](../../contribute/):
 You built a system according to the LA? Great, let us know. Gave a talk on the LA?
 Wonderful, why not issuing a pull request? Have a project up on GitHub that contributes
-to the LA? Brilliant, [raise an issue](https://github.com/mhausenblas/amadeus-hbase/issues)
+to the LA? Brilliant, [raise an issue](https://github.com/mhausenblas/lambda-architecture.net/issues)
 here and we'll add it, eventually.
 
 And now thanks for your time and enjoy the LA as much as we do!
