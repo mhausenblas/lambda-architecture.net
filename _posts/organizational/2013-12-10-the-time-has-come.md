@@ -11,7 +11,7 @@ author_twitter: mhausenblas
 
 You might have heard about the Lambda Architecture (LA) already.
 [Nathan Marz](https://twitter.com/nathanmarz) came up with this term for a
-a generic data processing architecture, based on his experience working on
+generic data processing architecture, based on his experience working on
 distributed data processing systems at Backtype and Twitter.
 Really, people have been architecting and deploying LA-like systems for decades.
 In a sense, the LA is an extended [event sourcing](http://martinfowler.com/eaaDev/EventSourcing.html)
