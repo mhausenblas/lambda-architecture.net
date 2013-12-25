@@ -36,7 +36,7 @@ over case studies where and how the LA has been applied to review of components.
 >  a distributed system for interactive, ad-hoc analysis and query of large-scale datasets.
 
 
-### Entries
+#### Organizational Updates
 
 <ul class="posts">
   {% for post in site.categories.organizational %}

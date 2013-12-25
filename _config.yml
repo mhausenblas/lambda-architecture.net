@@ -35,16 +35,17 @@ navigation:
     url: /components
   - title: Architecture
     url: /architecture
+  - title: Platforms
+    url: /platforms
   - title: Contributing
     url: /contribute
-  - title: About us
-    url: /aboutus
 
 mycategories:
   organizational: Organizational
   architecture: Architecture
   stories: Case Stories
   components: Components
+  platforms: Platforms
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #

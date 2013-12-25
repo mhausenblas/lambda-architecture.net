@@ -38,3 +38,6 @@ Here's how it looks like, from a high-level perspective:
 1. The **speed layer** compensates for the high latency of updates to the serving layer. This layer deals with recent data only.
 1. Any incoming **query** can be answered by merging results from batch views and real-time views.
 
+### Who is behind this?
+
+See the [about us](aboutus/) section for details.
