@@ -38,6 +38,15 @@ Here's how it looks like, from a high-level perspective:
 1. The **speed layer** compensates for the high latency of updates to the serving layer. This layer deals with recent data only.
 1. Any incoming **query** can be answered by merging results from batch views and real-time views.
 
+
+### Resources
+
+* [Big Data](http://manning.com/marz/), book by Nathan Marz and James Warren
+* [Applying the Big Data Lambda Architecture](http://www.drdobbs.com/database/applying-the-big-data-lambda-architectur/240162604), Dr. Dobb's article by Michael Hausenblas
+* [The Lambda architecture: principles for architecting realtime Big Data systems](http://jameskinley.tumblr.com/post/37398560534/the-lambda-architecture-principles-for-architecting), blog post by James Kinley
+* [Lambda Architecture: How to Achieve Big Data Velocity & Volume](http://www.bigdatarepublic.com/author.asp?section_id=2840&doc_id=270186), article by Christian Prokopp
+
+
 ### Who is behind this?
 
 See the [about us](aboutus/) section for details.
