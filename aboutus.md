@@ -13,7 +13,7 @@ gathering and documenting material around it to share best practices and spread 
 #### Contact
 
 Get in touch with us via Twitter: [@LambdaArch](http://twitter.com/LambdaArch)
-or learn more about how to [contribute here](contribute/).
+or learn more about how to [contribute here](../contribute/).
 
 #### Profiles
 
