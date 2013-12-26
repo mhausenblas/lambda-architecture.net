@@ -8,7 +8,12 @@ permalink: aboutus/index.html
 {% include JB/setup %}
 
 We're two Lambda Architecture (LA) believers who think the time has come to start
-gathering and documenting material around it to share best practices and spread the word. 
+gathering and documenting material around it to share best practices and spread the word.
+
+#### Contact
+
+Get in touch with us via Twitter: [@LambdaArch](http://twitter.com/LambdaArch)
+or learn more about how to [contribute here](contribute/).
 
 #### Profiles
 
