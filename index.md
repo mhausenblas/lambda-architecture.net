@@ -31,11 +31,10 @@ Here's how it looks like, from a high-level perspective:
 
 ![LA overview](img/la-overview_small.png "LA overview")
 
-
 1. All **data** entering the system is dispatched to both the batch layer and the speed layer for processing.
-1. The **batch layer** has two functions: (i) managing the master dataset, an immutable, append-only set of raw data, and (ii) to pre-compute the batch views.
-1. The **serving layer** indexes the batch views so that they can be queried in ad hoc with low latency. 
-1. The **speed layer** compensates for the high latency of updates to the serving layer. This layer deals with recent data only.
+1. The **batch layer** has two functions: (i) managing the master dataset (an immutable, append-only set of raw data), and (ii) to pre-compute the batch views.
+1. The **serving layer** indexes the batch views so that they can be queried in low-latency, ad-hoc way. 
+1. The **speed layer** compensates for the high latency of updates to the serving layer and deals with recent data only.
 1. Any incoming **query** can be answered by merging results from batch views and real-time views.
 
 
