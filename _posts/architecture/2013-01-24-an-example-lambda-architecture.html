@@ -1,0 +1,24 @@
+---
+layout: post
+title: "An example Lambda Architecture for real-time analysis of hashtags using Trident, Hadoop and Splout SQL"
+description: 'Blog post showcasing a simple lambda architecture'
+category: architecture
+tags: [post, Big Data, Lambda, Hadoop, Splout, Trident, Storm]
+author: "Pere Ferrera"
+author_twitter: ferrerabertran
+---
+{% include JB/setup %}
+
+<p>
+In this post it is shown how to use Trident, Hadoop and Splout SQL together to build a toy example “lambda architecture“. 
+One can learn the basics of Trident, a higher-level API on top of Storm, and Splout SQL, a fast SQL read-only DB for Hadoop. 
+The example architecture is hosted on <a href='https://github.com/pereferrera/trident-lambda-splout'>a github project</a>. 
+</p>
+<p>
+The example simulates counting the number of appearances of hashtags in tweets, by date. 
+The ultimate goal is to solve this simple problem in a fully scalable way, and provide a remote low-latency service for 
+querying the evolution of the counts of a hashtag, including both consolidated and real-time statistics for it.
+</p>
+<p>
+Read the full post: <a href='http://www.datasalt.com/2013/01/an-example-lambda-architecture-using-trident-hadoop-and-splout-sql/'>http://www.datasalt.com/2013/01/an-example-lambda-architecture-using-trident-hadoop-and-splout-sql/</a>.
+</p>
