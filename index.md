@@ -43,7 +43,7 @@ Here's how it looks like, from a high-level perspective:
 * [Big Data](http://manning.com/marz/), book by Nathan Marz and James Warren
 * [Applying the Big Data Lambda Architecture](http://www.drdobbs.com/database/applying-the-big-data-lambda-architectur/240162604), Dr. Dobb's article by Michael Hausenblas
 * [The Lambda architecture: principles for architecting realtime Big Data systems](http://jameskinley.tumblr.com/post/37398560534/the-lambda-architecture-principles-for-architecting), blog post by James Kinley
-* [Lambda Architecture: How to Achieve Big Data Velocity & Volume](http://www.bigdatarepublic.com/author.asp?section_id=2840&doc_id=270186), article by Christian Prokopp
+* [Lambda Architecture: Achieving Velocity and Volume with Big Data](http://www.semantikoz.com/blog/lambda-architecture-velocity-volume-big-data-hadoop-storm/), article by Christian Prokopp
 
 
 ### Who is behind this?
