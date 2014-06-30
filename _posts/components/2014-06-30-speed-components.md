@@ -11,17 +11,17 @@ author_twitter: mhausenblas
 
 ## Stream Processing Frameworks
 
-|Technology            |Does it fit            |Maturity               |Complexity     |Language       |Comments                  |
+|Technology            |Does it fit            |Maturity               |Ease of use     |Language       |Comments                  |
 |----------------------|-----------------------|-----------------------|---------------|---------------|--------------------------|
-|[Apache Storm][STORM] |&#9733;&#9733;&#9733;  |&#9733;&#9733;&#9733;  |&#9733;        |Clojure        | originates from Twitter  |
-|[Apache Spark Streaming][SPARKSTREAMING] |&#9733;&#9733;&#9733;  |&#9733;&#9733;                |&#9733;        |Scala/Java/Python           | originates from AMPLab   |
-|[Apache Samza][SAMZA] |&#9733;&#9733;&#9733;  |&#9733;&#9733;         |&#9733;&#9733; |Scala/Java     | originates from LinkedIn |
+|[Apache Storm][STORM] |&#9733;&#9733;&#9733;  |&#9733;&#9733;&#9733;  |&#9733;&#9733;        |Clojure        | originates from Twitter  |
+|[Apache Spark Streaming][SPARKSTREAMING] |&#9733;&#9733;&#9733;  |&#9733;&#9733;                |&#9733;&#9733;&#9733;        |Scala/Java/Python           | originates from AMPLab   |
+|[Apache Samza][SAMZA] |&#9733;&#9733;&#9733;  |&#9733;&#9733;         |&#9733; |Scala/Java     | originates from LinkedIn |
 |[Apache S4][S4]       |&#9733;&#9733;&#9733;  |&#9733;                |&#9733;        |Java           | originates from Yahoo!   |
 
 
 ## Cloud-based  (XaaS) Offerings
 
-|Technology         |Does it fit            |Maturity        |Complexity     |API     |Comments                |
+|Technology         |Does it fit            |Maturity        |Ease of use     |API     |Comments                |
 |-------------------|-----------------------|----------------|---------------|--------|------------------------|
 |AWS [Kinesis][KINESIS] |&#9733;&#9733;&#9733;  |&#9733;&#9733;  |&#9733;&#9733; |Java    | introduced in 11/2013  |
 |Google [Cloud Dataflow][GCD] |&#9733;&#9733;  | - |? |Java    | introduced in 06/2014, not yet available  |
