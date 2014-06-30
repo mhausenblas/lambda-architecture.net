@@ -50,7 +50,7 @@ guidance for the advanced.
 [S4]: http://incubator.apache.org/s4/ "S4 is a distributed, scalable, fault-tolerant, pluggable platform that allows programmers to develop applications for processing continuous unbounded streams of data"
 [KINESIS]: http://aws.amazon.com/kinesis/ "Amazon Kinesis is a fully managed service for real-time processing of streaming data at massive scale"
 [SPRING XD]: http://projects.spring.io/spring-xd/ "Spring XD: A unified, distributed, and extensible system for data ingestion, real time analytics, batch processing, and data export"
-[STREAMOVERVIEW]: http://home.deib.polimi.it/margara/papers/survey.pdf "Processing Flows of Information: From Data Stream to Complex Event Processing"
+[STREAMOVERVIEW]: http://cobweb.cs.uga.edu/~laks/ADCS-2013-Fall/CM-CEP-Survey.pdf "Processing Flows of Information: From Data Stream to Complex Event Processing"
 [SAMOA]: http://yahoo.github.io/samoa/ "SAMOA is a distributed streaming machine learning framework that contains a programing abstraction for distributed streaming ML algorithms"
 [GETTINGSTARTEDSTORM]: http://shop.oreilly.com/product/0636920024835.do "Getting Started with Storm: Continuous streaming computation with Twitter's cluster technology by Jonathan Leibiusky, Gabriel Eisbruch, Dario Simonassi"
 [STORMAPPLIED]: http://manning.com/sallen/ "Strategies for real-time event processing by Sean T. Allen, Peter Pathirana, and Matthew Jankowski"
