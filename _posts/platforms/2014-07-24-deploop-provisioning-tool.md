@@ -34,11 +34,13 @@ it's a front end of the CLI engine.
 
 ## Usage examples
 
- deploop -f conf/cluster.json --deploy batch
- deploop -f conf/cluster.json --deploy batch,speed,bus,serving
+    deploop -f conf/cluster.json --deploy batch
 
- deploop --cluster production --layer batch --stop
- deploop --cluster production --layer batch --start
+    deploop -f conf/cluster.json --deploy batch,speed,bus,serving
+
+    deploop --cluster production --layer batch --stop
+
+    deploop --cluster production --layer batch --start
 
 ## Resources
 
