@@ -17,5 +17,6 @@ author_twitter: mhausenblas
 |SploutSQL                                                 |&#9733;&#9733;&#9733;  |&#9733;                |&#9733;&#9733;         |Java	   |	           |
 |Voldemort (with a ReadOnly backend)                       |&#9733;&#9733;         |&#9733;&#9733;         |&#9733;&#9733;         |Java	   |               |
 |HBase (bulk loading)    |&#9733;&#9733;	   |&#9733;&#9733;	   |&#9733;&#9733;	   |Java  	   |		   |
+|[Druid][DRUID]                                            |&#9733;&#9733;&#9733;  |&#9733;&#9733;         |&#9733;                |Java           |originates from Metamarkets|
 
-
+[DRUID]: http://druid.io/ "Druid: A real-time data store designed to power interactive applications at scale"
