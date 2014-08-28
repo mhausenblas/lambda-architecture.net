@@ -1,0 +1,38 @@
+---
+layout: post
+title: "A RAD Stack: Kafka, Storm, Hadoop, and Druid"
+description: 'Blog post about a production architecture using Kafka, Storm, Hadoop, and Druid.'
+category: stories
+tags: [post, Kafka, Storm, Hadoop, Druid]
+author: "Druid Committers"
+author_twitter: druidio
+---
+{% include JB/setup %}
+
+<p>
+At Metamarkets, we run a lambda architecture comprised of <a href='http://kafka.apache.org/'>Kafka</a>,
+<a href='https://storm.incubator.apache.org/'>Storm</a>, <a href='http://hadoop.apache.org/'>Hadoop</a>, and
+<a href='http://druid.io/'>Druid</a> to power interactive historical and real-time analysis of event streams. Around
+the office, we tongue-in-cheekily call the setup the "RAD stack." It stands for "Real-time analytics data stack," you
+see. As of this writing, the system handles some tens of billions of new events per day.
+</p>
+
+<p>
+In our version of the architecture, Kafka acts as the origin data source for both real-time and batch pipelines. In
+the real-time pipelines, Storm topologies read events from Kafka, process them, and stream them into Druid. In the
+batch pipelines, all events are copied from Kafka to S3 and are then processed and loaded into Druid by a Hadoop flow
+that applies the same logic as the Storm topology. We use a high-level abstraction to generate both the Hadoop and
+Storm jobs, although it's also possible to write them independently.
+</p>
+
+<p>
+Druid natively supports both real-time and batch ingestion, so we didn't need to implement anything extra to perform
+aggregations or merge real-time and batch results. Once loaded into Druid, batch-ingested data automatically replaces
+the data that was loaded in real-time for the same interval, providing a unified view.
+</p>
+
+<p>
+If you're interested, you are invited to read a full post about this: <a href='https://metamarkets.com/2014/building-a-data-pipeline-that-handles-billions-of-events-in-real-time/'>https://metamarkets.com/2014/building-a-data-pipeline-that-handles-billions-of-events-in-real-time/</a>.
+We also have a <a href='https://www.youtube.com/watch?v=kJMYVpnW_AQ'>talk from Strata 2014</a> and corresponding
+<a href='https://speakerdeck.com/druidio/real-time-analytics-with-open-source-technologies-1'>slide deck</a> online.
+</p>
