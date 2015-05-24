@@ -44,6 +44,7 @@ Here's how it looks like, from a high-level perspective:
 * [Applying the Big Data Lambda Architecture](http://www.drdobbs.com/database/applying-the-big-data-lambda-architectur/240162604), Dr. Dobb's article by Michael Hausenblas
 * [The Lambda architecture: principles for architecting realtime Big Data systems](http://jameskinley.tumblr.com/post/37398560534/the-lambda-architecture-principles-for-architecting), blog post by James Kinley
 * [Lambda Architecture: Achieving Velocity and Volume with Big Data](http://www.semantikoz.com/blog/lambda-architecture-velocity-volume-big-data-hadoop-storm/), article by Christian Prokopp
+* [Lambda Architecture with Apache Spark](https://speakerdeck.com/mhausenblas/lambda-architecture-with-apache-spark) by Michael Hausenblas
 
 
 ### Who is behind this?
