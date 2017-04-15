@@ -1,0 +1,27 @@
+---
+layout: post
+title: "An example of Lambda Architecture to analyse Twitter's tweets  with Spark, Spark-streaming, Cassandra, Kafka, Twitter4j, Akka and Akka-http"
+description: 'Blog post showcasing a Twitter tweets analysis'
+category: stories
+tags: [post, Big Data, Lambda, Spark, Spark-streaming, Kafka, Cassandra, Twitter4j, Akka, Akka-http]
+author: "Narayan Kumar"
+author_twitter: narayan46647943
+---
+{% include JB/setup %}
+
+<p>
+    This post gives an overview about an article which shows the usage of an "lambda architecture" for a Twitter tweets analysis.
+    It combines reactive frameworks like Spark, Akka and Akka-http to build this kind of architecture.
+</p>
+
+<p>
+    In this Blog post, we can see realtime twitter's tweets analysis using "lambda architecture". This project basically shows how to easily
+    implement each layer of lambda architecture using SACK(Spark,Akka,Cassandra,Kafka) stack. We have used akka scheduler and Spark-streaming
+    windows time slice to effectively implement batch view and realtime view creation in specified time interval. It uses Twitter4j streaming api
+    to fetch realtime tweets against given keywords and put into kafka. It uses Cassandra to store batch_view, realtime_view and master_dataset.
+    To get source code follow the link: <a href='https://github.com/knoldus/Lambda-Arch-Spark'>https://github.com/knoldus/Lambda-Arch-Spark</a>
+</p>
+
+<p>
+    To Read the full Blog post: <a href='https://blog.knoldus.com/2017/01/31/twitters-tweets-analysis-using-lambda-architecture/'>https://blog.knoldus.com/2017/01/31/twitters-tweets-analysis-using-lambda-architecture/</a>.
+</p>
